@@ -9,9 +9,11 @@ var PostItemView = Backbone.View.extend({
 render: function(){
   console.log('item');
   this.$el.html(this.template(this.model.toJSON()));
+  return this;
 },
 
 destroyPost: function(){
+  console.log('destroy');
   this.model.destroy();
 }
 

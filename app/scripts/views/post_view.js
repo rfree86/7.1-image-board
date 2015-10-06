@@ -16,15 +16,21 @@ var CreatePostView = Backbone.View.extend({
     return this;
   },
 
-  toggleHidden: function(){
-    console.log('hiding');
+  toggleHidden: function(e){
+    e.preventDefault();
     this.$('.content').toggleClass('hidden');
+    this.$('.js_img').val('');
+    this.$('.js_cap').val('');
+
   },
 
   createPost: function(e){
-    console.log("hi");
+    console.log("create");
     e.preventDefault();
     this.collection.create(this.serializeForm());
+    this.$('.js_img').val('');
+    this.$('.js_cap').val('');
+
   },
 
   serializeForm: function(){
@@ -34,7 +40,9 @@ var CreatePostView = Backbone.View.extend({
       result[input.name] = input.value;
     });
     return result;
+
   },
+
 
 
 });

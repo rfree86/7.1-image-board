@@ -8,7 +8,7 @@ var PostCollectionView = Backbone.View.extend({
     console.log('hey');
   },
   render: function() {
-    console.log('function');
+    console.log('collection');
     var self = this;
     this.$el.html('');
     this.collection.each(function(post) {
