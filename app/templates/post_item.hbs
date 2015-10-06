@@ -1,4 +1,14 @@
-
+{{#if isEditing}}
+<h2>Edit Post</h2>
 <span><img src="{{image}}" alt=""></span>
 <h3>{{caption}}</h3>
-<button class="js_destroy_post">delete</button>
+<input class="js_editImage" type="text" name="name"  value="{{image}}">
+<input class="js_editCaption" type="text" name="name"  value="{{caption}}">
+<button class ="editCancel">Cancel</button>
+<button class="submitButton">Submit</button>
+{{else}}
+<span><img src="{{image}}" alt=""></span>
+<h3>{{caption}}</h3>
+<button class="js_edit_post">Edit</button>
+<button class="js_destroy_post">Delete</button>
+{{/if}}
