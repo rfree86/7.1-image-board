@@ -2,6 +2,7 @@ import PostItemView from 'views/post_item_view';
 
 var PostCollectionView = Backbone.View.extend({
   tagName: 'ul',
+  className: 'js_post_list',
 
   initialize: function(){
     this.listenTo(this.collection, 'add remove', this.render);

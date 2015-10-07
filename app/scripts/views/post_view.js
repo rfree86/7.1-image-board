@@ -1,9 +1,10 @@
 var CreatePostView = Backbone.View.extend({
 
   tagName: 'div',
-  className: "js_create_post",
+  className: "js_create_post createPost",
 
   template: JST['create_post'],
+
 
   events: {
     'submit': 'createPost',
@@ -25,7 +26,6 @@ var CreatePostView = Backbone.View.extend({
   },
 
   createPost: function(e){
-    console.log("create");
     e.preventDefault();
     this.collection.create(this.serializeForm());
     this.$('.js_img').val('');

@@ -2,7 +2,7 @@
 var PostItemView = Backbone.View.extend({
   tagName: 'li',
   template: JST['post_item'],
-  className: 'js.post',
+  className: 'js_post',
 
 
   events:{
