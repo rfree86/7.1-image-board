@@ -1,3 +1,7 @@
+#7.1-image-board
+Another Backbone project. This assignment is a simple image board that allows a user to post an image and a caption. One feature I built into this project that I had not used before is the ability to edit a post. Here are the images that I based this project on:
+![](https://raw.githubusercontent.com/TIY-GVL-FEE-2015-August/assignments/master/7.1-image-board/add.png)
+
 # frontend-scaffolding
 
 #### How to get started
